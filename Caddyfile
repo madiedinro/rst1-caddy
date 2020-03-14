@@ -1,0 +1,11 @@
+
+demo.local:8080 {
+    tls self_signed
+    proxy / fake-shop:8080
+}
+
+stat.demo.local:8080 {
+    tls self_signed
+	root /dist
+}
+
